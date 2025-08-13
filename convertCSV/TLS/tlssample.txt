@@ -1,0 +1,32 @@
+null	Not Registered	null	null	null	84388748355	388748355	Call later	Pending	null	7/31/2025 - Katie - Chửi rồi tắt ngang, gọi lại sau	Katie
+null	Not Registered	null	null	null	84939689851	939689851	Call later	Pending	null	7/31/2025 - Katie - Không nghe máy, gọi lại sau	Katie
+null	Not Registered	null	null	null	84936734246	936734246	Call later	Pending	null	7/31/2025 - Katie - Chửi rồi tắt ngang, gọi lại sau	Katie
+null	Not Registered	null	null	null	84907250194	907250194	Call later	Pending	null	7/31/2025 - Katie - Không chơi game, tắt ngang, gọi lại sau	Katie
+null	Not Registered	null	null	null	84967939815	967939815	Success	Pending	null	7/31/2025 - Katie - Add Zalo khách tư vấn thêm, khách hơi xạo, đang chơi game mà bảo không dùng mạng xã hội	Katie
+6/26/2025	Non - Deposit	aloxinh83	KIEU NGOC TUNG	xingtg004004	84823222464	@tiepbip	Success	Transfer	null	"6/26/2025 - Katie - đang tư vấn cho khách qua  tele @tiepbip 
+Đã đăng ký link 18386
+6/28/2025 - Katie - Nhắn tin Tele tư vấn thêm KM và mời nạp
+7/1/2025 - Katie - Nhắn lại tele, khách chưa rep
+7/2/2025 - Katie - Không nghe máy, gọi lại sau
+7/5/2025 - Katie - Đang đi làm, tele bị chặn không vô đc, gửi kết bạn zalo chăm khách
+7/6/2025 - Katie - 
+7/07/2025 - Franko - Chuyển sang CRM follow. "	Katie
+6/14/2025	Non - Deposit	son112vlvl	null	xingtg00300530	794002565	794002565	Success	Done	200	"6/16/2025 - Katie - Gọi tư vấn KM khách, nhắn tele
+6/28/2025 - Katie - đang tư vấn cho khách qua  tele KM nạp đầu nạp 200 tặng 68K 
+7/1/2025 - Katie - Đang mời lại khách nạp
+7/2/2025 - Katie - Tối đi làm 8h về, gọi lại 
+7/5/2025 - Katie - Đang đi làm, mới khách KM hoàn nạp, tối 8h làm về sẽ coi
+7/6/2025 - Katie - "	Katie
+6/28/2025	Non - Deposit	tuantuanvo	VO HOANG TUAN	xingtg004004	902323177	568108710	Success	Done	200	"6/26/2025 - Katie - Khách nhắn qua Zalo hỏi code, mời khách ctr KM nạp 200 tặng 68
+7/1/2025 - Katie - Không nghe máy, nhắn tele cho khách
+7/2/2025 - Katie - Anh không có chơi, lộn số rồi
+7/5/2025 - Katie - Anh không có chơi, không có nhu cầu"	Katie
+7/10/2025	Deposited	myka91	DO VAN BAC	xingtg004004	84334964057	Anh Bắc	Success	Done	200	7/10/2025 - Katie - Nhắn Zalo tư vấn thêm các KM cho khách. Đã đăng ký link 18386. Khách đã nạp đầu 200 mã 175212895952224112	Katie
+6/9/2025	Deposited	phuoc22243	LE XUAN PHUOC	xingtg004004	528906645	null	Call later	Transfer	null	"7/1/2025 - Katie -  Thuê bao, gọi lại sau
+7/4/2025 - Katie - Thuê bao, gọi lại sau
+7/7/2025 - Katie - Thuê bao, gọi lại sau
+7/11/2025 - Franko - Chuyển sang CRM khác follow. "	Katie
+6/9/2025	Deposited	tan4444553	NGUYEN TRONG TAN	xingtg004004	929069811	null	Call later	Transfer	null	"7/1/2025 - Katie -  Thuê bao, gọi lại sau
+7/4/2025 - Katie - Thuê bao, gọi lại sau
+7/7/2025 - Katie - Thuê bao, gọi lại sau
+7/11/2025 - Franko - Chuyển sang CRM khác follow. "	Katie
