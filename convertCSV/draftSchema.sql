@@ -7,7 +7,7 @@
     CRM: William, Happy, Bita, Tiger
     TLS: Katie
     AccountStatus: Normal, VIP
-    LifeCycle: TLS1, TLS2, TLS3, CRM
+    *New* LifeCycle: TLS1, TLS2, TLS3, CRM
 */ 
 
 # Data
@@ -15,8 +15,8 @@
 	Username: VARCHAR
     FullName: VARCHAR
     Tel: VARCHAR
-    Email: VARCHAR
     Membertype: Enum
+	Email: VARCHAR
     DOB: DATE
     VIP Level: ? 
     Line: ?
@@ -44,5 +44,23 @@
 	Username: VARCHAR
     Fullname: VARCHAR
     Tel: VARCHAR
-    
+    Contact: VARCHAR
+    Member Type: ENUM	
+    CallStatus: ENUM
+    CaseStatus: ENUM
+    CaseNote: VARCHAR
+    AccountStatus: ENUM
+    Amount: DECIMAL(13,2)
+    CallDate: DATE 
+    RegisterDate: DATE
+    Line: ?
+    CRM1: VARCHAR (ENUM?)
+    CRM2: VARCHAR (ENUM?)
+	NumOfDays: INT
+*/
+
+# To be added:
+/* 
+	NumOfDeposit: INT
+    LastDepositDate : DATE
 */
