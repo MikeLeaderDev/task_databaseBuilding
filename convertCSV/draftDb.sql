@@ -1,9 +1,9 @@
 -- One row per person
-CREATE TABLE contacts ( -- will record contactsid and their tel, also record their status as lead or customer 
+CREATE TABLE contacts ( -- "person" level info will record contactsid and their tel, also record their status as lead or customer 
   contact_id      BIGINT PRIMARY KEY AUTO_INCREMENT,
   tel			  VARCHAR(200),
-  fullname		  VARCHAR(200),
-  status          ENUM('lead','customer') NOT NULL DEFAULT 'lead',
+  fullname		  VARCHAR(200), 
+  contact_status  ENUM('lead','customer') NOT NULL DEFAULT 'lead',
   note			  TEXT,
   created_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -11,7 +11,7 @@ CREATE TABLE contacts ( -- will record contactsid and their tel, also record the
 
 -- Catalog of channels (telephone, email, telegram, zalo, etc.)
 CREATE TABLE contact_channels ( -- will store contact channels id and name 
-  channel_id      TINYINT PRIMARY KEY,
+  channel_code    TINYINT PRIMARY KEY,
   channel_name    VARCHAR(32) NOT NULL UNIQUE,   -- e.g., 'phone','email','telegram','zalo','viber','facebook','whatsapp','wechat','discord'
 );
 
@@ -19,9 +19,9 @@ CREATE TABLE contact_channels ( -- will store contact channels id and name
 CREATE TABLE contact_points (
   point_id        BIGINT PRIMARY KEY AUTO_INCREMENT,
   contact_id      BIGINT NOT NULL,
-  channel_id      TINYINT NOT NULL,
+  channel_code    TINYINT NOT NULL,
   value_raw       VARCHAR(255) NOT NULL,  -- as entered by user 
-  value_norm      VARCHAR(255) NULL,
+  value_norm      VARCHAR(255) NULL, -- application level handle this when posting
   is_primary      BOOLEAN NOT NULL DEFAULT 0,
   verified_at     DATETIME NULL,
   created_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -62,7 +62,7 @@ CREATE TABLE usernames (
   UNIQUE (contact_id, platform_id)
 );
 
--- customer detail once they register
+-- customer detail once they register (optional - maybe not needed)
 CREATE TABLE customers (
   contact_id      BIGINT PRIMARY KEY,
   customer_no     BIGINT UNIQUE,
