@@ -1,13 +1,13 @@
 # Settings
 /* 	
 	ENUM? 
-	MemberType: Not registered, Non deposit, deposited 
-    CallStatus: Pending, Success, Call later, Wrong Number
-    StatusCase: Pending, Done, Closed, Transfer ?? 
-    CRM: William, Happy, Bita, Tiger
-    TLS: Katie
-    AccountStatus: Normal, VIP1, VIP2, VIP3, SUPERVIP
-    *New* LifeCycle: TLS1, TLS2, TLS3, CRM
+	MemberType: Not registered, Non deposit, deposited -- to be
+    CallStatus: Pending, Success, Call later, Wrong Number - verify at contacts level? -- to be
+    StatusCase: Pending, Done, Closed, Transfer -- done 
+    CRM: William, Happy, Bita, Tiger -- Done
+    TLS: Katie -- Done 
+    AccountStatus: Normal, VIP1, VIP2, VIP3, SUPERVIP - to be
+    *New* LifeCycle: TLS1, TLS2, TLS3, CRM - to be
 */ 
 
 # Data
@@ -73,9 +73,23 @@ Customer_contact_info
 	cust_id
     Contact_info
     contact_type_id
+Usernames
+	cust_id
+	username
+    register_date
+    vip_level
+    platform_id
+Platform
+	platform_id
+	platform_name
 Event table 
 	NumOfDeposit: INT
-    LastDepositDate : DATE
+    LastDepositDate : DATE 01/01/2100  
     Notes
 Many usernames in each platforms 
+*/
+
+/* 
+	last_dp_date 
+    life_cycle 
 */
