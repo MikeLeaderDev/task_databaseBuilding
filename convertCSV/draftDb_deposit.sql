@@ -1,19 +1,19 @@
 -- One row per successful deposit on a specific platform username
 CREATE TABLE deposits (
   deposit_id     BIGINT PRIMARY KEY AUTO_INCREMENT,
-  deposit_code	 VARCHAR(255), 
+  deposit_code	 VARCHAR(50), 
   username_id    BIGINT NOT NULL, -- which account on which platform
-  staff_id		 BIGINT, 
+  staff_id		 VARCHAR(20), 
   amount         DECIMAL(12,2) NOT NULL,
   currency       CHAR(3) NOT NULL DEFAULT 'USD',     -- keep anyway, future-proof
-  deposited_at   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  deposit_at    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
   -- Optional status if you ingest pending/failed: only count 'success'
   transaction_status         ENUM('success','failed','pending') NOT NULL DEFAULT 'success',
 
   FOREIGN KEY (username_id) REFERENCES usernames(username_id),
-  INDEX (username_id, deposited_at),
-  INDEX (status, deposited_at)
+  INDEX (username_id, deposit_at),
+  INDEX (status, deposit_at, deposit_at)
 );
 
 CREATE TABLE withdrawals (
@@ -29,8 +29,8 @@ CREATE TABLE withdrawals (
   transaction_status         ENUM('success','failed','pending') NOT NULL DEFAULT 'success',
 
   FOREIGN KEY (username_id) REFERENCES usernames(username_id),
-  INDEX (username_id, deposited_at),
-  INDEX (status, deposited_at)
+  INDEX (username_id, deposit_at),
+  INDEX (status, deposit_at)
 );
 /* 
 	
